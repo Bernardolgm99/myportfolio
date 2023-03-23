@@ -13,8 +13,8 @@ import NavBar from '../components/NavBar.vue'
   <NavBar />
   <header id="section1" class="bg-black">
     <v-container class="d-flex flex-column align-center">
-      <span>‘’</span>
-      <h1>If you don’t take risks, you can’t create a future.</h1>
+      <span>''</span>
+      <h1>If you don't take risks, you can't create a future.</h1>
       <a href="#header" class="material-symbols-outlined icon-size"> expand_more </a>
     </v-container>
   </header>
@@ -56,7 +56,7 @@ header a {
   100% {top:0px;}
 }
 
-header .icon-size: {
+header .icon-size {
 
 }
 
