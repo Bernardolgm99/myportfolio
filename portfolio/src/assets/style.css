@@ -10,4 +10,60 @@ body {
     background-color: #582FFF;
 }
 
-.clickable {}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bigilla', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 120px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 96px;
+}
+
+h3 {
+    font-size: 48px;
+}
+.text-who-am-i h2 {
+    font-size: 48px;
+}
+
+.text-who-am-i h3 {
+    font-size: 32px;
+}
+
+hr {
+    border-color: #582FFFAA;
+    width: 100%;
+}
+
+.btn {
+    text-transform: lowercase;
+    background-color: #582FFF77;
+    color: #582FFF;
+    padding: 8px 30px 8px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 300;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
