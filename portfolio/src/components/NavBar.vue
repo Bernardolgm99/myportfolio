@@ -43,7 +43,6 @@ export default {
             this.scrollPosition = window.scrollY;
             document.querySelectorAll('.section').forEach((section, i) => { this.sections[i] = section.offsetTop });
             //try a watcher to see if the page height has changed
-            console.log(this.sections)
         },
         goScroll(i) {
             scrollTo(0, this.sections[i])

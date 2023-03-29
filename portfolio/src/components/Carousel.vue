@@ -1,6 +1,6 @@
 <template>
     <v-carousel hide-delimiters class="my-14">
-        <v-carousel-item src="./src/assets/game-developed-0.gif" cover class="project">
+        <v-carousel-item src="./assets/game-developed-0.gif" cover class="project">
             <div class="description">
                 <h4 class="mb-4">Aframe VR</h4>
                 <p> It is a simulator where you can view some room with different interactions (additional experience wearing headset VR). You can view more <a
@@ -8,7 +8,7 @@
             </div>
         </v-carousel-item>
 
-        <v-carousel-item src="./src/assets/game-developed-1.gif" cover class="project">
+        <v-carousel-item src="./assets/game-developed-1.gif" cover class="project">
             <div class="description">
                 <h4 class="mb-4">EcoPlus Game</h4>
                 <p>This was a game created with the propose to enjoy and teach kids for the importance of recly and how is
@@ -17,7 +17,7 @@
             </div>
         </v-carousel-item>
 
-        <v-carousel-item src="./src/assets/game-developed-2.gif" cover class="project">
+        <v-carousel-item src="./assets/game-developed-2.gif" cover class="project">
             <div class="description">
                 <h4 class="mb-4">Animation Game threejs</h4>
                 <p>A project did for practice and improve my and my group habilities with technology THREEJS. In this minigame you will

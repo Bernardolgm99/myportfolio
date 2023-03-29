@@ -43,9 +43,10 @@ import Background from '../components/Background.vue'
             <hr class="my-6">
             <p class="my-5"><span>Do you have a good story?</span> If you have one, please, could you tell me? I would
               like to read.</p>
-            <textarea class="mb-10 input-history" :class="{ activedTextArea: inputActive }" @click="inputActive = true"
-              placeholder="Insert you story here..."></textarea>
-            <button class="mb-10 btn" v-if="inputActive">Send</button>
+            <textarea v-model="message" class="mb-10 input-history" :class="{ activedTextArea: inputActive }"
+              @click="inputActive = true" placeholder="Insert you story here..."></textarea>
+            <p class="my-5">{{ response }}</p>
+            <button class="mb-10 btn" v-if="inputActive" @click="messageSend">Send</button>
           </div>
         </v-col>
         <v-col class="my-image">
@@ -64,7 +65,7 @@ import Background from '../components/Background.vue'
                 <div>
                   <h4>KOWD</h4>
                   <p>A website created to teach javascript with a interectve method using Gamification. Take a look <a
-                          href="https://github.com/Bernardolgm99/kowd">HERE</a> on my GitHub.</p>
+                      href="https://github.com/Bernardolgm99/kowd">HERE</a> on my GitHub.</p>
                 </div>
                 <img src="../assets/project0.png">
               </span>
@@ -72,7 +73,7 @@ import Background from '../components/Background.vue'
                 <div>
                   <h4>ECOPLUS<br>LANDINGPAGE</h4>
                   <p>A design and developement of a landingpage for a EcoEscolas project website. Take a look <a
-                          href="https://github.com/Bernardolgm99/ecoplus">HERE</a> on my GitHub.</p>
+                      href="https://github.com/Bernardolgm99/ecoplus">HERE</a> on my GitHub.</p>
                 </div>
                 <img src="../assets/project1.png">
               </span>
@@ -83,16 +84,17 @@ import Background from '../components/Background.vue'
               <span class="face-image">
                 <div>
                   <h4>ECOPLUS<br>SOCIAL MEDIA</h4>
-                  <p>Social media created for group EcoEscolas with the propose to attract students for activities made for EcoEscolas and some more. Take a look <a
-                          href="https://github.com/Bernardolgm99/ecoplus">HERE</a> on my GitHub.</p>
+                  <p>Social media created for group EcoEscolas with the propose to attract students for activities made
+                    for EcoEscolas and some more. Take a look <a href="https://github.com/Bernardolgm99/ecoplus">HERE</a>
+                    on my GitHub.</p>
                 </div>
                 <img src="../assets/project2.png">
               </span>
               <span class="face-image2">
                 <div>
                   <h4>MANGER.PT</h4>
-                  <p>My first professional job, made for a professional chef. Take a look <a
-                          href="manger.pt">HERE</a> on manger.pt.</p>
+                  <p>My first professional job, made for a professional chef. Take a look <a href="manger.pt">HERE</a> on
+                    manger.pt.</p>
                 </div>
                 <img src="../assets/project3.png">
               </span>
@@ -109,20 +111,20 @@ import Background from '../components/Background.vue'
     <h2 class="my-16">My hobbies</h2>
     <h3 class="mb-12">MY FAVORITE PHOTOS</h3>
     <div class="my-photos w-100">
-      <div style="background-image: url('./src/assets/photo2.png');"></div>
-      <div style="background-image: url('./src/assets/photo0.JPG');"></div>
-      <div style="background-image: url('./src/assets/photo1.png');"></div>
-      <div style="background-image: url('./src/assets/photo7.jpeg');"></div>
-      <div style="background-image: url('./src/assets/photo5.png');"></div>
-      <div style="background-image: url('./src/assets/photo3.png');"></div>
-      <div style="background-image: url('./src/assets/photo4.png');"></div>
-      <div style="background-image: url('./src/assets/photo6.png');"></div>
+      <div style="background-image: url('./assets/photo2.png');"></div>
+      <div style="background-image: url('./assets/photo0.JPG');"></div>
+      <div style="background-image: url('./assets/photo1.png');"></div>
+      <div style="background-image: url('./assets/photo7.jpeg');"></div>
+      <div style="background-image: url('./assets/photo5.png');"></div>
+      <div style="background-image: url('./assets/photo3.png');"></div>
+      <div style="background-image: url('./assets/photo4.png');"></div>
+      <div style="background-image: url('./assets/photo6.png');"></div>
     </div>
     <h3 class="mt-16">MY FAVORITE GAMES</h3>
     <div class="my-games my-12">
-      <div class="number3" style="background-image: url('./src/assets/game3.png');"></div>
-      <div class="number2" style="background-image: url('./src/assets/game2.jpg');"></div>
-      <div class="number1" style="background-image: url('./src/assets/game1.webp');"></div>
+      <div class="number3" style="background-image: url('./assets/game3.png');"></div>
+      <div class="number2" style="background-image: url('./assets/game2.jpg');"></div>
+      <div class="number1" style="background-image: url('./assets/game1.webp');"></div>
     </div>
   </section>
   <section class="bg-black section">
@@ -137,7 +139,14 @@ import Background from '../components/Background.vue'
 export default {
   data() {
     return {
-      inputActive: false
+      inputActive: false,
+      message: '',
+    }
+  },
+  methods: {
+    messageSend() {
+      this.message = '';
+      this.response = 'Thank you for tell me!!! xD'
     }
   },
 }
@@ -226,7 +235,7 @@ header a {
 }
 
 .my-image {
-  background-image: url('./src/assets/me.jpg');
+  background-image: url('./me.jpg');
   background-position: left center;
   background-size: cover;
 }
@@ -281,26 +290,30 @@ textarea:focus {
   animation: animate 15s linear infinite;
 }
 
-.face-image p, .face-image2 p{
+.face-image p,
+.face-image2 p {
   color: #fff;
   font-size: 20px;
   font-weight: 200;
 }
 
-.face-image h4, .face-image2 h4{  
+.face-image h4,
+.face-image2 h4 {
   font-size: 30px;
   margin-bottom: 20px;
   font-family: 'Fraunces', serif;
   font-weight: 300;
 }
 
-.face-image div, .face-image2 div{
+.face-image div,
+.face-image2 div {
   background-color: #000a;
   padding: 40px 140px 0 60px;
   height: 350px;
 }
 
-.face-image a, .face-image2 a {
+.face-image a,
+.face-image2 a {
   color: rgb(250, 113, 39);
 }
 
@@ -403,4 +416,5 @@ textarea:focus {
 
 .final-text .mid {
   font-size: 64px;
-}</style>
+}
+</style>
