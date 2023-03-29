@@ -2,17 +2,17 @@
     <nav id="menu" v-if="scrollPosition >= sections[0]">
         <v-container class="d-flex flex-column justify-center align-end">
             <span class="my-10"
-                :class="{ active: (sections[0] <= scrollPosition && sections[1] > scrollPosition ? true : false) }"
+                :class="{ active: (sections[0] <= scrollPosition + 100 && sections[1] > scrollPosition + 100 ? true : false) }"
                 @click="goScroll(0)">
                 who am I?
             </span>
             <span class="my-10"
-                :class="{ active: (sections[1] <= scrollPosition && sections[2] > scrollPosition ? true : false) }"
+                :class="{ active: (sections[1] <= scrollPosition + 100 && sections[2] > scrollPosition + 100 ? true : false) }"
                 @click="goScroll(1)">
                 some projects
             </span>
             <span class="my-10"
-                :class="{ active: (sections[2] <= scrollPosition && sections[3] > scrollPosition ? true : false) }"
+                :class="{ active: (sections[2] <= scrollPosition + 100 && sections[3] > scrollPosition + 100 ? true : false) }"
                 @click="goScroll(2)">
                 my hobbies
             </span>
@@ -43,6 +43,7 @@ export default {
             this.scrollPosition = window.scrollY;
             document.querySelectorAll('.section').forEach((section, i) => { this.sections[i] = section.offsetTop });
             //try a watcher to see if the page height has changed
+            console.log(this.sections)
         },
         goScroll(i) {
             scrollTo(0, this.sections[i])
@@ -56,6 +57,7 @@ export default {
 nav {
     position: fixed;
     height: 100vh;
+    width: 0px;
     display: flex;
     top: 0%;
     right: 0%;
@@ -65,6 +67,9 @@ nav {
 }
 
 span {
+    position: absolute;
+    white-space: nowrap;
+    right: 10px;
     padding: 5px 15px;
     background-color: #000A;
     font-size: 24px;

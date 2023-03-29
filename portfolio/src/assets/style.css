@@ -7,7 +7,6 @@ html {
 
 body {
     font-family: 'Fraunces', serif;
-    background-color: #582FFF;
 }
 
 h1,
@@ -17,6 +16,7 @@ h4,
 h5,
 h6 {
     font-family: 'Bigilla', sans-serif;
+    color:#FFF;
 }
 
 h1 {

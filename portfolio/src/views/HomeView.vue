@@ -1,8 +1,11 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
+import Carousel from '../components/Carousel.vue'
+import Background from '../components/Background.vue'
 </script>
 
 <template>
+  <Background />
   <header id="header">
     <v-container class="d-flex flex-column align-center">
       <span>‘’</span>
@@ -50,16 +53,10 @@ import NavBar from '../components/NavBar.vue'
       </v-row>
     </div>
   </section>
-  <section id="section2" class="bg-black section">
+  <section id="section2" class="section">
   <div class="d-flex flex-column align-center py-14">
     <h2 class="my-14">Projects I did</h2>
     <div class="d-flex justify-center flex-wrap pt-14">
-      <!-- <div>
-          <img class="my-16 mx-13" src="../assets/project0.png">
-                <div class="mt-16">
-                  <img class="my-16 mx-13" src="../assets/project3.png">
-                </div>
-              </div> -->
         <div class="div-main-rotate-images">
           <div class="div-rotate-images">
             <div class="pivot-images">
@@ -82,26 +79,36 @@ import NavBar from '../components/NavBar.vue'
             </div>
           </div>
         </div>
-        <img>
       </div>
-      <div>
-        <img>
+      <div class="my-14">
+        <Carousel />
       </div>
     </div>
   </section>
-  <section id="section3" class="bg-black section">
-    <v-container class="d-flex flex-column align-center">
-      <span>''</span>
-      <h1>If you don't take risks, you can't create a future.</h1>
-      <a href="#header" class="material-symbols-outlined icon-size"> expand_more </a>
-    </v-container>
+  <section id="section3" class="d-flex flex-column align-center section">
+    <h2 class="my-16">My hobbies</h2>
+    <h3 class="mb-12">MY FAVORITE PHOTOS</h3>
+    <div class="my-photos w-100">
+      <div style="background-image: url('./src/assets/photo2.png');"></div> <!--<img src="../assets/photo0.png"> -->
+      <div style="background-image: url('./src/assets/photo1.png');"></div> <!--<img src="../assets/photo0.png"> -->
+      <div style="background-image: url('./src/assets/photo0.JPG');"></div> <!--<img src="../assets/photo0.JPG"> -->
+      <div style="background-image: url('./src/assets/photo7.png');"></div> <!--<img src="../assets/photo0.JPG"> -->
+      <div style="background-image: url('./src/assets/photo5.png');"></div> <!--<img src="../assets/photo0.png"> -->
+      <div style="background-image: url('./src/assets/photo3.png');"></div> <!--<img src="../assets/photo0.png"> -->
+      <div style="background-image: url('./src/assets/photo4.png');"></div> <!--<img src="../assets/photo0.png"> -->
+      <div style="background-image: url('./src/assets/photo6.png');"></div> <!--<img src="../assets/photo0.png"> -->
+    </div>
+    <h3 class="mt-16">MY FAVORITE GAMES</h3>
+    <div class="my-games my-12">
+      <div class="number3" style="background-image: url('./src/assets/game3.png');"></div>
+      <div class="number2" style="background-image: url('./src/assets/game2.jpg');"></div>
+      <div class="number1" style="background-image: url('./src/assets/game1.webp');"></div>
+    </div>
   </section>
-  <section id="section4" class="section">
-    <v-container class="d-flex flex-column align-center">
-      <span>''</span>
-      <h1>If you don't take risks, you can't create a future.</h1>
-      <a href="#header" class="material-symbols-outlined icon-size"> expand_more </a>
-    </v-container>
+  <section class="bg-black section">
+    <div class="final-text d-flex align-center justify-center"><span class="big">AND THIS IS ME</span></div>
+    <div class="final-text d-flex align-center justify-center"><span class="mid">THANK YOU TO VISIT MY WEBSITE</span></div>
+    <div class="final-text d-flex align-center justify-center"><span class="big">I HOPE THAT YOU ENJOYED</span></div>
   </section>
 </template>
 
@@ -193,8 +200,8 @@ header a {
 }
 
 .my-image {
-  background-image: url(https://w0.peakpx.com/wallpaper/231/971/HD-wallpaper-cool-king-kolor-neon.jpg);
-  background-position: center;
+  background-image: url('./src/assets/me.jpg');
+  background-position: left bottom;
   background-size: cover;
 }
 
@@ -293,5 +300,56 @@ textarea:focus {
   100% {
     transform: rotateY(0deg);
   }
+}
+
+.my-photos {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.my-photos div {
+  height: 400px;
+  flex: 1 1 400px;
+  min-width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.my-games div{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+.my-games div::before{
+  font-size: 128px;
+  position: absolute;
+  top: 40px;
+  left: -150px;
+  color: white;
+}
+
+.my-games .number1::before{
+  content: "1";
+}
+.my-games .number2::before{
+  content: "2";
+}
+.my-games .number3::before{
+  content: "3";
+}
+
+.final-text {
+  height: 50vw;
+  text-align: center;;
+}
+
+.final-text .big {
+  font-size: 96px;
+}
+
+.final-text .mid {
+  font-size: 64px;
 }
 </style>
