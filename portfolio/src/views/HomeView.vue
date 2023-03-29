@@ -54,16 +54,26 @@ import Background from '../components/Background.vue'
     </div>
   </section>
   <section id="section2" class="section">
-  <div class="d-flex flex-column align-center py-14">
-    <h2 class="my-14">Projects I did</h2>
-    <div class="d-flex justify-center flex-wrap pt-14">
+    <div class="d-flex flex-column align-center py-14">
+      <h2 class="my-14">Projects I did</h2>
+      <div class="d-flex justify-center flex-wrap pt-14">
         <div class="div-main-rotate-images">
           <div class="div-rotate-images">
             <div class="pivot-images">
               <span class="face-image">
+                <div>
+                  <h4>KOWD</h4>
+                  <p>A website created to teach javascript with a interectve method using Gamification. Take a look <a
+                          href="https://github.com/Bernardolgm99/kowd">HERE</a> on my GitHub.</p>
+                </div>
                 <img src="../assets/project0.png">
               </span>
               <span class="face-image2">
+                <div>
+                  <h4>ECOPLUS<br>LANDINGPAGE</h4>
+                  <p>A design and developement of a landingpage for a EcoEscolas project website. Take a look <a
+                          href="https://github.com/Bernardolgm99/ecoplus">HERE</a> on my GitHub.</p>
+                </div>
                 <img src="../assets/project1.png">
               </span>
             </div>
@@ -71,9 +81,19 @@ import Background from '../components/Background.vue'
           <div class="mt-16 div-rotate-images">
             <div class="mt-16 pivot-images">
               <span class="face-image">
+                <div>
+                  <h4>ECOPLUS<br>SOCIAL MEDIA</h4>
+                  <p>Social media created for group EcoEscolas with the propose to attract students for activities made for EcoEscolas and some more. Take a look <a
+                          href="https://github.com/Bernardolgm99/ecoplus">HERE</a> on my GitHub.</p>
+                </div>
                 <img src="../assets/project2.png">
               </span>
               <span class="face-image2">
+                <div>
+                  <h4>MANGER.PT</h4>
+                  <p>My first professional job, made for a professional chef. Take a look <a
+                          href="manger.pt">HERE</a> on manger.pt.</p>
+                </div>
                 <img src="../assets/project3.png">
               </span>
             </div>
@@ -89,14 +109,14 @@ import Background from '../components/Background.vue'
     <h2 class="my-16">My hobbies</h2>
     <h3 class="mb-12">MY FAVORITE PHOTOS</h3>
     <div class="my-photos w-100">
-      <div style="background-image: url('./src/assets/photo2.png');"></div> <!--<img src="../assets/photo0.png"> -->
-      <div style="background-image: url('./src/assets/photo1.png');"></div> <!--<img src="../assets/photo0.png"> -->
-      <div style="background-image: url('./src/assets/photo0.JPG');"></div> <!--<img src="../assets/photo0.JPG"> -->
-      <div style="background-image: url('./src/assets/photo7.png');"></div> <!--<img src="../assets/photo0.JPG"> -->
-      <div style="background-image: url('./src/assets/photo5.png');"></div> <!--<img src="../assets/photo0.png"> -->
-      <div style="background-image: url('./src/assets/photo3.png');"></div> <!--<img src="../assets/photo0.png"> -->
-      <div style="background-image: url('./src/assets/photo4.png');"></div> <!--<img src="../assets/photo0.png"> -->
-      <div style="background-image: url('./src/assets/photo6.png');"></div> <!--<img src="../assets/photo0.png"> -->
+      <div style="background-image: url('./src/assets/photo2.png');"></div>
+      <div style="background-image: url('./src/assets/photo0.JPG');"></div>
+      <div style="background-image: url('./src/assets/photo1.png');"></div>
+      <div style="background-image: url('./src/assets/photo7.jpeg');"></div>
+      <div style="background-image: url('./src/assets/photo5.png');"></div>
+      <div style="background-image: url('./src/assets/photo3.png');"></div>
+      <div style="background-image: url('./src/assets/photo4.png');"></div>
+      <div style="background-image: url('./src/assets/photo6.png');"></div>
     </div>
     <h3 class="mt-16">MY FAVORITE GAMES</h3>
     <div class="my-games my-12">
@@ -107,7 +127,8 @@ import Background from '../components/Background.vue'
   </section>
   <section class="bg-black section">
     <div class="final-text d-flex align-center justify-center"><span class="big">AND THIS IS ME</span></div>
-    <div class="final-text d-flex align-center justify-center"><span class="mid">THANK YOU TO VISIT MY WEBSITE</span></div>
+    <div class="final-text d-flex align-center justify-center"><span class="mid">THANK YOU TO VISIT MY WEBSITE</span>
+    </div>
     <div class="final-text d-flex align-center justify-center"><span class="big">I HOPE THAT YOU ENJOYED</span></div>
   </section>
 </template>
@@ -179,6 +200,10 @@ header a {
   max-width: 600px;
 }
 
+.text-who-am-i h2 {
+  color: #000;
+}
+
 .text-who-am-i p {
   font-size: 24px;
   font-weight: 200;
@@ -192,6 +217,7 @@ header a {
 
 .text-who-am-i h3 {
   align-self: start;
+  color: #000;
 }
 
 .text-who-am-i a {
@@ -201,7 +227,7 @@ header a {
 
 .my-image {
   background-image: url('./src/assets/me.jpg');
-  background-position: left bottom;
+  background-position: left center;
   background-size: cover;
 }
 
@@ -250,9 +276,32 @@ textarea:focus {
   width: 0px;
   margin: auto;
   position: relative;
-  height: 1020px;
+  height: 1420px;
   transform-style: preserve-3d;
-  animation: animate 10s linear infinite;
+  animation: animate 15s linear infinite;
+}
+
+.face-image p, .face-image2 p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.face-image h4, .face-image2 h4{  
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+}
+
+.face-image div, .face-image2 div{
+  background-color: #000a;
+  padding: 40px 140px 0 60px;
+  height: 350px;
+}
+
+.face-image a, .face-image2 a {
+  color: rgb(250, 113, 39);
 }
 
 .face-image {
@@ -277,11 +326,11 @@ textarea:focus {
     transform: rotateY(0deg);
   }
 
-  8% {
+  5% {
     transform: rotateY(-45deg) scaleX(.8) scaleZ(.9);
   }
 
-  16% {
+  10% {
     transform: rotateY(-90deg);
   }
 
@@ -289,11 +338,11 @@ textarea:focus {
     transform: rotateY(-90deg);
   }
 
-  58% {
+  55% {
     transform: rotateY(-45deg) scaleX(.9) scaleZ(.8);
   }
 
-  66% {
+  60% {
     transform: rotateY(0deg);
   }
 
@@ -303,8 +352,8 @@ textarea:focus {
 }
 
 .my-photos {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .my-photos div {
@@ -315,14 +364,14 @@ textarea:focus {
   background-size: cover;
 }
 
-.my-games div{
+.my-games div {
   height: 300px;
   width: 300px;
   position: relative;
   background-size: cover;
 }
 
-.my-games div::before{
+.my-games div::before {
   font-size: 128px;
   position: absolute;
   top: 40px;
@@ -330,19 +379,22 @@ textarea:focus {
   color: white;
 }
 
-.my-games .number1::before{
+.my-games .number1::before {
   content: "1";
 }
-.my-games .number2::before{
+
+.my-games .number2::before {
   content: "2";
 }
-.my-games .number3::before{
+
+.my-games .number3::before {
   content: "3";
 }
 
 .final-text {
   height: 50vw;
-  text-align: center;;
+  text-align: center;
+  ;
 }
 
 .final-text .big {
@@ -351,5 +403,4 @@ textarea:focus {
 
 .final-text .mid {
   font-size: 64px;
-}
-</style>
+}</style>

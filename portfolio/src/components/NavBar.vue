@@ -69,8 +69,8 @@ nav {
 span {
     position: absolute;
     white-space: nowrap;
-    right: 10px;
-    padding: 5px 15px;
+    right: 15px;
+    padding: 10px 15px;
     background-color: #000A;
     font-size: 24px;
     font-weight: 300;
@@ -92,7 +92,7 @@ span {
 
 .active::before {
     content: "•";
-    padding: 5px 16px;
+    padding: 10px 16px;
     background-color: #000A;
     position: absolute;
     text-align: center;
@@ -107,7 +107,7 @@ span {
     animation-iteration-count: infinite;
     animation-duration: 1s;
     text-align: center;
-    top: 2px;
+    top: 8px;
     left: -25px;
 }
 
