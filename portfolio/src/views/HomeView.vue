@@ -24,10 +24,10 @@ import Background from '../components/Background.vue'
             </h2>
             <p class="mt-9"><span>Hi, I’m Bernardo</span> a brazilian student of programming and designing for web.</p>
             <p class="my-5">I started my knowledge at programming in “The Federal Center for Technological Education”, in
-              portuguese “O
-              Centro Federal de Educacao Tecnologica”, a famous institute on Rio de Janeiro (CEFET-RJ) from 2015 to 2019.
-              After it, I had the opportunity to moved to Portugal, and I had to leave my mother’s house to start living
-              with my uncles. In the beginning I knew it’s gone be hard, but it was good to me take that risk. About 1
+              portuguese “Centro Federal de Educacao Tecnologica”, a famous institute on Rio de Janeiro (CEFET-RJ) from
+              2015 to 2019.
+              After it, I had the opportunity to move to Portugal, and I had to leave my mother’s house to start living
+              with my uncles. In the beginning I knew it was gone be hard, but it was good to me take that risk. About 1
               year after, I joined IPP - ESMAD where I study until today. The name of my course is “Web Information
               Systems and Technologies”, in portuguese “Tecnologia de Sistemas de Informacao para a Web”, occasionally is
               difficult to remember, so is always easier to call “TSIW”!</p>
@@ -35,11 +35,11 @@ import Background from '../components/Background.vue'
             <p class="mb-5">I like to spend my time learning more about programming, and sometimes I like to take a break
               to play one
               of my favorite games , Overwatch, where I can mitigate my competitive spirit, or just go play a Indie game.
-              I have another hobby who is photograph. I really love to do it. I don’t know, if I’m good on it, but you can
+              I have another hobby who is photograph. I really love to do it. I don’t know if I’m good at it, but you can
               check some of my photos <a href="#my-photos">HERE</a>.</p>
-            <p class="mb-5">Another thing I like to do, is spend my time with my family and friends, is always good stay
-              with them and
-              take a rest of the world... and they often have some good story to tell me.</p>
+            <p class="mb-5">Another thing I like to do is spending my time with my family and friends, it's always good
+              hanging out with them and taking a break from the world... and they often have
+              some good story to tell me.</p>
             <hr class="my-6">
             <p class="my-5"><span>Do you have a good story?</span> If you have one, please, could you tell me? I would
               like to read.</p>
@@ -64,7 +64,7 @@ import Background from '../components/Background.vue'
               <span class="face-image">
                 <div>
                   <h4>KOWD</h4>
-                  <p>A website created to teach javascript with a interectve method using Gamification. Take a look <a
+                  <p>A website created to teach javascript with an interactive method using gamification. Take a look <a
                       href="https://github.com/Bernardolgm99/kowd">HERE</a> on my GitHub.</p>
                 </div>
                 <img src="../assets/project0.png">
@@ -72,7 +72,7 @@ import Background from '../components/Background.vue'
               <span class="face-image2">
                 <div>
                   <h4>ECOPLUS<br>LANDINGPAGE</h4>
-                  <p>A design and developement of a landingpage for a EcoEscolas project website. Take a look <a
+                  <p>A design and development of a Landing Page for a EcoEscolas project website. Take a look <a
                       href="https://github.com/Bernardolgm99/ecoplus">HERE</a> on my GitHub.</p>
                 </div>
                 <img src="../assets/project1.png">
@@ -84,8 +84,9 @@ import Background from '../components/Background.vue'
               <span class="face-image">
                 <div>
                   <h4>ECOPLUS<br>SOCIAL MEDIA</h4>
-                  <p>Social media created for group EcoEscolas with the propose to attract students for activities made
-                    for EcoEscolas and some more. Take a look <a href="https://github.com/Bernardolgm99/ecoplus">HERE</a>
+                  <p>Social media created for the group EcoEscolas, with the purpose of attracting students for activities
+                    made for Eco Escola and some more. Take a look <a
+                      href="https://github.com/Bernardolgm99/ecoplus">HERE</a>
                     on my GitHub.</p>
                 </div>
                 <img src="../assets/project2.png">
@@ -129,9 +130,9 @@ import Background from '../components/Background.vue'
   </section>
   <section class="bg-black section">
     <div class="final-text d-flex align-center justify-center"><span class="big">AND THIS IS ME</span></div>
-    <div class="final-text d-flex align-center justify-center"><span class="mid">THANK YOU TO VISIT MY WEBSITE</span>
+    <div class="final-text d-flex align-center justify-center"><span class="mid">THANK YOU FOR VISITING MY WEBSITE</span>
     </div>
-    <div class="final-text d-flex align-center justify-center"><span class="big">I HOPE THAT YOU ENJOYED</span></div>
+    <div class="final-text d-flex align-center justify-center"><span class="big">I HOPE YOU ENJOYED IT</span></div>
   </section>
 </template>
 

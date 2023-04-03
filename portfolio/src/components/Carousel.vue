@@ -3,7 +3,8 @@
         <v-carousel-item src="./assets/game-developed-0.gif" cover class="project">
             <div class="description">
                 <h4 class="mb-4">Aframe VR</h4>
-                <p> It is a simulator where you can view some room with different interactions (additional experience wearing headset VR). You can view more <a
+                <p> It is a simulator where you can view some room with different interactions (additional experience
+                    wearing headset VR). You can view more <a
                         href="https://github.com/Bernardolgm99/a-frame_experimental">HERE</a> in my GitHub.</p>
             </div>
         </v-carousel-item>
@@ -11,8 +12,8 @@
         <v-carousel-item src="./assets/game-developed-1.gif" cover class="project">
             <div class="description">
                 <h4 class="mb-4">EcoPlus Game</h4>
-                <p>This was a game created with the propose to enjoy and teach kids for the importance of recly and how is
-                    supose to do this. You can view more <a
+                <p>This game was created with the purpose of teaching kids the importance of recycling and how you're
+                    supposed to do it, in a fun and interactive way. You can view more <a
                         href="https://github.com/Bernardolgm99/game-interactive-canvas">HERE</a> in my GitHub.</p>
             </div>
         </v-carousel-item>
@@ -20,9 +21,10 @@
         <v-carousel-item src="./assets/game-developed-2.gif" cover class="project">
             <div class="description">
                 <h4 class="mb-4">Animation Game threejs</h4>
-                <p>A project did for practice and improve my and my group habilities with technology THREEJS. In this minigame you will
-                    be able to play with Kirby and eat some trashes droped from trees. You can view more <a
-                        href="https://github.com/NarizConstipado/animation_game-threejs">HERE</a> in my friend GitHub.</p>
+                <p>A project done for practicing and improving mine and my group's abilities with the technology THREE.JS.
+                    In this minigame you will be able to play as Kirby and eat some trash dropped from trees. You can view
+                    more HERE.<a
+                        href="https://github.com/NarizConstipado/animation_game-threejs">HERE</a> in my friend's GitHub</p>
             </div>
         </v-carousel-item>
     </v-carousel>
